@@ -5,23 +5,16 @@ Bio2013
 A software project for FHS interns.
 
 
+### Ideas ###
 
-Lists work like this:
-
- - first item
- - second
- - etc.
+Check out cool ideas on 
+[this wiki page](https://github.com/antoniawuschner/bio2013/wiki/FourierTransform-Aspects).
 
 
-And here's some code:
-
-    python>>> 3 + 4
-    7
-
-Syntax
+### Syntax ###
 - %s (word) will replace %s with that word
 
-To make a method
+### To make a method ###
 - start with def
 - parameters are the same as java
 - end with a colon
@@ -37,9 +30,21 @@ To load from the terminal, reload, and call methods
     reload(f)
     f.sum1(list1)
     
-Important functions
+### Important functions ###
 
     dir(method, class,ect) #gives what that class can do
     help(f.list1.index) #tells what that method does
     
-    
+
+### Boilerplate ###
+
+ - easy_install
+ - ... shell stuff ...
+ - ... etc. ...
+
+### Markdown tips ###
+
+Github displays markdown files in a special, neat way.  Files ending in `.md` get this magic
+treatment.  
+
+It's easy to do *italics*, **bold text**, and inline code like `y = x + 4`.
