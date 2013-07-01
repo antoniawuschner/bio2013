@@ -4,9 +4,10 @@ say- says stuff
 touch + file name - creates text file
 open + file name - opens that file
 git clone + url - clones the url of the project to the computer
-git add - add file to project
-git commit -
-git push - 
+git add + file name - adds file to library
+git commit -m + string - saves everything so it can be restored
+git status - gives update on everything done
+git push - puts it online
 git pull - 
-git status -
-mv - move
+mv + file name + where to move - moves file
+
