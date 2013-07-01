@@ -1,0 +1,11 @@
+cd- goes to new directory
+ls- shows where you are if lost
+say- says stuff
+touch + file name - creates text file
+open + file name - opens that file
+git clone + url - clones the url of the project to the computer
+git add -
+git commit -
+git push - 
+git pull - 
+mv - move
