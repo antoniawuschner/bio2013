@@ -5,6 +5,8 @@ Bio2013
 A software project for FHS interns.
 
 
+Check out cool ideas on [this wiki page](https://github.com/antoniawuschner/bio2013/wiki/FourierTransform-Aspects).
+
 
 Lists work like this:
 
