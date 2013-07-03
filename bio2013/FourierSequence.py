@@ -11,7 +11,6 @@ def FourierSequence(numbers):
             d = b/c
             e = math.e ** d
             sum = sum + a * e
-            print x,number
         total.append(sum)
     return total
     
