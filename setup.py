@@ -1,12 +1,12 @@
 from distutils.core import setup
 
 setup(
-    name='UnParse',
-    version='0.0.3',
-    packages=['unparse', 'unparse.examples'],
-    license='MIT',
-    author='Matt Fenwick',
-    author_email='mfenwick100@gmail.com',
-    url='https://github.com/mattfenwick/UnParse',
-    description='a parser combinator library'
+    name='???',
+    version='0.0.1',
+    packages=['???'],
+    license='???',
+    author='???',
+    author_email='???',
+    url='https://github.com/antoniawuschner/bio2013',
+    description='a neat python demo library'
 )
