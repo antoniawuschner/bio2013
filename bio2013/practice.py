@@ -1,7 +1,7 @@
 '''
 this is a doc comment
 '''
-
+import math
 
 def void():
     '''
@@ -11,44 +11,70 @@ def void():
 
 
 def concatenate(a, b):
-    raise ValueError('unimplemented')
+    answer = ""
+    answer = a + b
+    return answer
+    
 
 
 def getCharAt(string, index):
-    raise ValueError('unimplemented') 
-
-
-def branch():
-    if True:
-        raise ValueError('unimplemented')
-    elif False:
-        raise ValueError('unimplemented')
+    return string[index]
+  
+def buildList(a, b):
+    if a<b:
+       return range(a,(b+1))
     else:
-        raise ValueError('unimplemented')   
+        c = b
+        d = a+1
+        list = range(c,d)
+        list.reverse()
+        return list
+def buildDictionary(a):
+     dictionary = {}
+     for number in a:
+        dictionary.update({number:1})
+     return dictionary  
+
+def branch(value):
+    if value == 0:
+        return "It's zero"
+    elif value>0:
+        return "It's positive"
+    else:
+        return "It's negative"  
     
 
-def forExample(string):
-    '''
-    hint:  check out the `chr` and `ord` functions
-    '''
-    for c in string:
-        raise ValueError('unimplemented')
+def forExample(a):
+    ord(a)
 
+def isLessThan8(value):
+    if value<8:
+        return True
+    else:
+        return False  
 
+def union (a,b):
+   return set (set(a)|set(b))
+    
 class Circle(object):
     
     def __init__(self, center, radius):
-        raise ValueError('unimplemented')
-    
+       self.center = center
+       self.radius = radius 
+    def getRadius(self):
+        return self.radius
+    def getCenter(self):
+        return self.center  
     def getArea(self):
-        raise ValueError('unimplemented')
-    
+       return self.radius**2 * math.pi
     def buildConcentric(self):
-        raise ValueError('unimplemented')
-    
+        return Circle(self, self.getCenter(), (self.getRadius()+4))
     def __eq__(self, other):
-        raise ValueError('unimplemented')
-    
+        if self.getCenter() == other.getCenter():
+            if self.getRadius() == other.getRadius():
+                return "true"
+        else:
+            return "false"
     def __ne__(self, other):
         raise ValueError('unimplemented')
 
@@ -56,11 +82,12 @@ class Circle(object):
 class Sphere(object):
     
     def __init__(self, center, radius):
-        raise ValueError('unimplemented')
-    
+        self.center = center
+        self.radius = radius
+    def getRadius(self):
+        return self.radius
     def getSurfaceArea(self):
-        raise ValueError('unimplemented')
-    
+        return math.pi*4*self.getRadius()**2
     def getVolume(self):
-        raise ValueError('unimplemented')
+        return math.pi*(4./3)*self.getRadius()**3
     

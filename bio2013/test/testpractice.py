@@ -1,4 +1,4 @@
-from .. import classesanddatums as c
+from .. import practice as c
 import unittest
 
 
@@ -13,13 +13,12 @@ class TestStuff(unittest.TestCase):
         self.assertEqual('e', c.getCharAt('abcdef', 4))
     
     def testBranch(self):
-        self.assertEqual(branch(0), "it's zero")
-        self.assertEqual(branch(-18), "it's negative")
-        self.assertEqual(branch(72), "it's positive!!!1one")
+        self.assertEqual(c.branch(0), "It's zero")
+        self.assertEqual(c.branch(-18), "It's negative")
+        self.assertEqual(c.branch(72), "It's positive")
 
     def testForExample(self):
         self.assertEqual(97, c.forExample('?a9\n'))
-        self.assertEqual(34952, c.forExample(u'\u1234\u8888q'))
     
     def testCreateList(self):
         self.assertEqual([1,2,3,4,5], c.buildList(1, 5))
@@ -27,7 +26,6 @@ class TestStuff(unittest.TestCase):
     
     def testCreateDictionary(self):
         self.assertEqual({'a': 1, 'b': 1}, c.buildDictionary(['a', 'b']))
-        self.assertEqual({}, c.buildDictionary(['a', 'b']))
         self.assertEqual({1: 1, 'q': 1, 'd': 1}, c.buildDictionary([1, 'q', 'd']))
     
     def testUnion(self):
@@ -48,7 +46,7 @@ class TestClasses(unittest.TestCase):
         self.assertAlmostEqual(50.2654824574, c.Circle((2, 3), 4).getArea())
     
     def testSphereSurfaceArea(self):
-        self.assertAlmostEqual(804.247719318, c.Sphere((0, 0, 0), 8))
+        self.assertAlmostEqual(804.247719318, (c.Sphere((0, 0, 0), 8)).getSurfaceArea())
     
-    def testSphereSurfaceArea(self):
-        self.assertAlmostEqual(2144.660584850, c.Sphere((0, 0, 0), 8))
+    def testSphereVolume(self):
+        self.assertAlmostEqual(2144.660584850, (c.Sphere((0, 0, 0), 8)).getVolume())

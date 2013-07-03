@@ -4,9 +4,13 @@ import unittest
 
 
 class TestFirst(unittest.TestCase):
+     
 
     def testSum(self):
-        self.assertFalse(True)
+        result = first.sum1([1,2,3])
+        self.assertEqual(6,result)
+    def testSum2(self):
+    	self.assertEqual(6,first.sum1([0.5,2.5,3]))
         
-    def testTriple(self):
-        self.assertTrue(False)
+    def testBaseCase(self):
+        self.assertEqual(0,first.sum1([]))

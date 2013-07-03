@@ -8,6 +8,7 @@ git add + file name - adds file to library
 git commit -m + string - saves everything so it can be restored
 git status - gives update on everything done
 git push - puts it online
-git pull - 
+git pull - pulls back
 mv + file name + where to move - moves file
+git log --graph - shows what you did
 
