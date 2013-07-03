@@ -41,7 +41,8 @@ class TestClasses(unittest.TestCase):
     
     def testCircleEquality(self):
         self.assertEqual(c.Circle((2, 3), 22), c.Circle((2, 3), 22))
-    
+    def testCircleInEquality(self):
+        self.assertNotEqual(c.Circle((2,3),22),c.Circle((2,4),24))
     def testCircleArea(self):
         self.assertAlmostEqual(50.2654824574, c.Circle((2, 3), 4).getArea())
     
