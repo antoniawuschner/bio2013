@@ -51,3 +51,7 @@ It's easy to do *italics*, **bold text**, and inline code like `y = x + 4`.
 
 To run test
 ./filename
+=======
+Testing
+
+-in order for tests to run they have to start with test in the module
