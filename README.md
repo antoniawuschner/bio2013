@@ -55,3 +55,7 @@ To run test
 Testing
 
 -in order for tests to run they have to start with test in the module
+
+GitCommands
+-git log (returns history of commits)
+-git status (tells what's going on now)
