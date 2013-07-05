@@ -48,3 +48,6 @@ Github displays markdown files in a special, neat way.  Files ending in `.md` ge
 treatment.  
 
 It's easy to do *italics*, **bold text**, and inline code like `y = x + 4`.
+
+To run test
+./filename
