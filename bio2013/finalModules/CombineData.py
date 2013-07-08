@@ -1,5 +1,6 @@
 import math
+import itertools
 
-def CombineData(list1,list2):
-    addedValues = [x+y for (x,y) in zip(list1,list2)]
-    return addedValues
+def CombineXData(lists):
+    result = list(itertools.chain(*lists))
+    return result
