@@ -1,6 +1,14 @@
 import math
 
 def FourierSequence(numbers):
+    '''
+    Calculates a discrete Fourier transform
+    
+    Parameters
+    -a list of data
+    
+    Uses the equation found at http://en.wikipedia.org/wiki/Discrete_Fourier_transform#equation_Eq.1
+    '''
     total = []
     for x in range(0, len(numbers)):
         sum = 0
