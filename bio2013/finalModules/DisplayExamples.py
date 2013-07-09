@@ -18,7 +18,7 @@ def GenerateDataForOneFunction(function1,xValues):
     '''
     takes in a function and a list of x values and calculates its y values
     '''
-   return [function1(a) for a in b.CombineXData(xValues)]
+    return [function1(a) for a in b.CombineXData(xValues)]
 
 def CombineData(x):
     '''

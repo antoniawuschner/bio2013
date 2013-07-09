@@ -28,30 +28,11 @@ class sinFunction(object):
        self.a = a
        self.w = w
        self.offset = offset
-       self.t = t 
-   
-    def getA(self):
-        '''
-        returns amplitude
-        '''
-        return self.a 
+       self.t = t
+       
+    def __call__(self,x):
+        return self.CalculateOnePoint(x)
     
-    def getW(self):
-        '''
-        returns period
-        '''
-        return self.w 
-        
-    def getOffset(self):
-        '''
-        returns offset
-        '''
-        return self.offset 
-    
-    def getT(self):
-        '''
-        returns time parameter
-        '''
-        return self.t  
-  
-    
+    def CalculateOnePoint(self,x):
+        point = self.a * math.sin((x * self.w) + self.offset) * math.exp (-x * self.t)
+        return point
