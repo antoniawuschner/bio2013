@@ -1,4 +1,4 @@
-import math
+iimport math
 
 def addFunctions(function1,function2,x,y):
     '''
