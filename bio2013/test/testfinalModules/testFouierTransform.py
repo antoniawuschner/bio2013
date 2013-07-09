@@ -1,4 +1,4 @@
-from .. finalModules import CalculateFT as Fourier
+from ... finalModules import CalculateFT as Fourier
 import unittest
 import math
 import numpy as np
