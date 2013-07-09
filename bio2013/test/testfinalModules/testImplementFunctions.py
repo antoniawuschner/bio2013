@@ -25,3 +25,12 @@ class TestIF(unittest.TestCase):
         self.assertAlmostEqual(f(math.pi / 6.), 4)
         self.assertAlmostEqual(f(math.pi / 3.), 0)
         self.assertAlmostEqual(f(math.pi / 2.), -4)
+    
+    def testDecay(self):
+        f = imp.sinFunction(1, 1, 0, 1)
+        def formula(x):
+            return math.sin(x) * math.e ** -x
+        v1, v2, v3 = map(formula, [math.pi / 6., math.pi / 2., 3 * math.pi / 2.])
+        self.assertAlmostEqual(f(math.pi / 6.), v1)
+        self.assertAlmostEqual(f(math.pi / 2.), v2)
+        self.assertAlmostEqual(f(3 * math.pi / 2.), v3)

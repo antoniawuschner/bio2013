@@ -22,7 +22,7 @@ class sinFunction(object):
        sin equation constructor
        Parameters:
        -a - amplitude
-       -w - period
+       -w - frequency
        -offset - offset
        -t - time constant for exponential decay
        '''
