@@ -1,5 +1,5 @@
 import math
-
+    
 def GenerateAllData(listOfFunctions,xValues):
     '''
     calls the GenerateDataForOneFunction method for a list of functions and combines data
@@ -23,11 +23,4 @@ def CombineData(x):
     return [sum(i) for i in zip(*x)]
 
 def CombineXData(lists):
-    '''
-    Takes in a list of several series of x values and combines them into one list
-    Paremeters:
-        -list of lists of x values
-        - ex. ([[1,2,3],[2,3,4],[3,4,5]])
-    '''
-    result = list(itertools.chain(*lists))
-    return result
+    return [sum(i) for i in zip(*lists)]

@@ -3,6 +3,7 @@ import CalculateFT as a
 import ImplementFunctions as c
 import pylab as x
 import DisplayExamples as d
+import itertools
 
 def DoFourierTransform(listOfFunctions,xValues):
     '''
@@ -27,17 +28,17 @@ def plotFourierTransform(FourierData):
     x.plot(imag)
     
 def displayNoParameters():
-    plotFourierTransform(d.DoFourierTransform([math.sin],[range(1,1000),range(2,1001)]))
+    plotFourierTransform(DoFourierTransform([math.sin],[range(1,1000),range(2,1001)]))
 
-def displayWithParameters(a,w,offset,t):
+def displayWithParameters(s,a,w,offset,t):
     x.figure(2)
-    p = c.sinFunction(a,w,offset,t)
-    d.plotFourierTransform([p],[range(1,1000),range(2,1001)])
+    p = c.Function(a,w,offset,t)
+    plotFourierTransform(DoFourierTransform([p],[range(1,s),range(2,s+1)]))
     x.figure(3)
-    list = d.GenerateAllData([p],[range(1,1000),range(2,1001)])
-    x.plot(list)
+    list = d.GenerateAllData([p],[range(1,s),range(2,s+1)])
+    x.plot(plotFourierTransform(list))
     
-def displayAll(a,w,offset,t):
+def displayAll(s=1000, a=1,w=4.2,offset=3,t=.001):
     '''
     displays Fourier transform
     
@@ -47,4 +48,12 @@ def displayAll(a,w,offset,t):
     x.figure(1)
     displayNoParameters()
     x.figure(2)
-    displayWithParameters(a,w,offset,t)
+    displayWithParameters(s,a,w,offset,t)
+
+def displayMultiple():
+    x.figure(1)
+    displayNoParameters()
+    displayWithParameters(1000,1,4.2,3,.001)
+    displayWithParameters(1000,1,4.2,3,.01)
+    displayWithParameters(500,1,4.2,3,.001)
+    

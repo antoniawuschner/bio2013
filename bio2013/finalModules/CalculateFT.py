@@ -1,4 +1,5 @@
 import math
+import itertools
 
 def FourierSequence(numbers):
     '''
